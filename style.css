@@ -8,3 +8,69 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 /*18px open400700 pop600*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: var(--open-sans);
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.pointer{
+    cursor: pointer;
+}
+header{
+    background: var(--place-cyan) url(./images/bg-hero-desktop.svg) no-repeat;
+}
+.container{
+    padding: 40px 65px;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+nav .logo{
+    width: 200px;
+}
+nav .button{
+    background-color: white;
+}
+.header-body .button{
+    background-color: var(--pink);
+    color: white;
+}
+.header-body{
+    align-items: center;
+}
+.header-content{
+    flex: 1;
+}
+.header-content p{
+    margin: 25px 40px 25px 0;
+}
+.header-body .illustration{
+    flex: 1;
+}
+.header-body .illustration img{
+    width: 100%;
+}
+.button{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-weight: 700;
+    padding: 15px 50px;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px;
+}
+.button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
