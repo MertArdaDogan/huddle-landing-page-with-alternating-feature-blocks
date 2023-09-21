@@ -26,6 +26,7 @@ a{
 .pointer{
     cursor: pointer;
 }
+/* Header Style */
 header{
     background: var(--place-cyan) url(./images/bg-hero-desktop.svg) no-repeat;
 }
@@ -51,7 +52,7 @@ nav .button{
     align-items: center;
 }
 .header-content{
-    flex: 1;
+    flex: 0.7;
 }
 .header-content p{
     margin: 25px 40px 25px 0;
@@ -73,4 +74,38 @@ nav .button{
 .button:hover{
     cursor: pointer;
     opacity: 0.8;
+}
+/* Section Style */
+
+section .container{
+    padding: 100px 59px 200px 59px;
+}
+.card{
+    height: 500px;
+    margin-bottom: 45px;
+    padding: 55px 55px 55px 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.card-body{
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-text{
+    color: var(--blue);
+}
+.card-img{
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+.card-img img{
+   height: 100%;
+}
+.card:nth-child(even){
+    flex-direction: row-reverse;
+}
+.card:nth-child(even) .card-img{
+    justify-content: flex-start;
 }
