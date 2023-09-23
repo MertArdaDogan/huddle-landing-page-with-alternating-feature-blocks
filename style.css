@@ -109,3 +109,56 @@ section .container{
 .card:nth-child(even) .card-img{
     justify-content: flex-start;
 }
+/* Footer Style */
+
+footer .container{
+    background-color: var(--dark-cyan);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 70px 70px 70px;
+    font-size: 14px;
+    position: relative;
+}
+footer .logo img{
+    height: 26px;
+}
+.contact{
+    max-width: 350px;
+    width: 100%;
+    margin-right: 4rem;
+}
+.contact .text{
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+}
+.contact .text img{
+    height: 14px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+.footer-links{
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
+.links{
+    flex-direction: column;
+}
+.links a{
+    color: white;
+    margin-bottom: 15px;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.socials{
+    font-size: 20px;
+}
+.copy-right{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 13px;
+}
