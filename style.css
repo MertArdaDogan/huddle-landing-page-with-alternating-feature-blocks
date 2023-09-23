@@ -29,8 +29,7 @@ a{
 /* Header Style */
 header{
     background: var(--place-cyan) url(./images/bg-hero-desktop.svg) no-repeat;
-}
-.container{
+    height: 100vh;
     padding: 40px 65px;
 }
 nav{
@@ -79,6 +78,7 @@ nav .button{
 
 section .container{
     padding: 100px 59px 200px 59px;
+    position: relative;
 }
 .card{
     height: 500px;
@@ -109,6 +109,29 @@ section .container{
 .card:nth-child(even) .card-img{
     justify-content: flex-start;
 }
+.cta{
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 600px;
+    width: 100%;
+    padding: 50px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -80px;
+    z-index: 10;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cta h2{
+    margin-bottom: 20px;
+}
+.cta .button{
+    background-color: var(--pink);
+    color: white;
+}
 /* Footer Style */
 
 footer .container{
@@ -119,6 +142,7 @@ footer .container{
     padding: 150px 70px 70px 70px;
     font-size: 14px;
     position: relative;
+    margin-bottom: 30px;
 }
 footer .logo img{
     height: 26px;
@@ -161,4 +185,77 @@ footer .logo img{
     right: 30px;
     bottom: 30px;
     font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 376px) {
+    header{
+        padding: 20px;
+        background: var(--place-cyan) url(./images/bg-hero-mobile.svg) no-repeat;
+    }
+    .button{
+        padding: 10px 30px;
+    }
+    nav .logo{
+        width: 150px;
+    }
+    .header-body{
+        flex-direction: column;
+    }
+    .header-content{
+        text-align: center;
+        margin: 3rem 0;
+    }
+    .header-content p{
+        margin: 25px 0px 25px 0;
+    }
+    section .container{
+        padding: 100px 20px 200px 20px;
+    }
+    .card-body h2{
+        font-size: 25px;
+    }
+    .card{
+        flex-direction: column-reverse;
+        text-align: center;
+        height: 500px;
+        padding: 30px 20px;
+    }
+    .card-img img{
+        height: auto;
+        width: 90%;
+     }
+     .card:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .card:nth-child(even) .card-img{
+        justify-content: flex-end;
+    }
+    .cta{
+        width: 340px;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .cta h2{
+        font-size: 18px;
+    }
+    footer .container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 150px 30px 70px 30px;
+    }
+    .footer-links{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .socials{
+        align-self: center;
+    }
+    .copy-right{
+        right: 50%;
+        transform: translateX(50%);
+        max-width: 300px;
+        width: 100%;
+    }
 }
