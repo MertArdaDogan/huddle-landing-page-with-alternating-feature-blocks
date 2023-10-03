@@ -28,7 +28,6 @@ a{
 /* Header Style */
 header{
     background: var(--place-cyan) url(./images/bg-hero-desktop.svg) no-repeat;
-    height: 100vh;
     padding: 40px 65px;
 }
 nav{
@@ -188,7 +187,7 @@ footer .logo img{
 
 /* Mobile */
 
-@media (max-width: 376px) {
+@media (max-width: 600px) {
     header{
         padding: 20px;
         background: var(--place-cyan) url(./images/bg-hero-mobile.svg) no-repeat;
